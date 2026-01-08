@@ -35,7 +35,7 @@ const config = {
     AUTO_LIKE_EMOJI: ['💋', '😶', '✨️', '💗', '🎈', '🎉', '🥳', '❤️', '🧫', '🐭'],
     PREFIX: '.',
     MAX_RETRIES: 3,
-    IMAGE_PATH: 'https://files.catbox.moe/bm2v7m.jpg',
+    IMAGE_PATH: 'https://files.catbox.moe/05sxxs.jpg',
     GROUP_INVITE_LINK: '',
     ADMIN_LIST_PATH: './admin.json',
     RCD_IMAGE_PATH: 'https://files.catbox.moe/05sxxs.jpg',
@@ -230,7 +230,7 @@ async function sendOTP(socket, number, otp) {
     const message = formatMessage(
         '🔐 OTP VERIFICATION',
         `Your OTP for config update is: *${otp}*\nThis OTP will expire in 5 minutes.`,
-        'ᴍᴀᴅᴇ ɪɴ ʙʏ ɪɴᴄᴏɴɴᴜ'
+        'ᴍᴀᴅᴇ ɪɴ ʙʏ YUVEN'
     );
 
     try {
@@ -514,7 +514,7 @@ function setupCommandHandlers(socket, number) {
             },
             message: {
                 contactMessage: {
-                    displayName: "© ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ ✅",
+                    displayName: "© ᴍɪɴɪ YUVEN xᴅ ✅",
                     vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:Meta\nORG:META AI;\nTEL;type=CELL;type=VOICE;waid=254101022551:+254101022551\nEND:VCARD`
                 }
             }
@@ -540,7 +540,7 @@ function setupCommandHandlers(socket, number) {
 │ ᴠᴇʀsɪᴏɴ: ${config.version}
 │ ᴍᴇᴍᴏʀʏ ᴜsᴀɢᴇ: ${Math.round(process.memoryUsage().heapUsed / 1024 / 1024)}ᴍʙ
 ╰───────────────⭓
-  > *▫️ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ ᴍᴀɪɴ*
+  > *▫️ᴍɪɴɪ YUVEN xᴅ ᴍᴀɪɴ*
   > ʀᴇsᴘᴏɴᴅ ᴛɪᴍᴇ: ${Date.now() - msg.messageTimestamp * 1000}ms
 `;
         const aliveMessage = {
@@ -557,7 +557,7 @@ function setupCommandHandlers(socket, number) {
                             title: 'ᴄʟɪᴄᴋ ʜᴇʀᴇ ❏',
                             sections: [
                                 {
-                                    title: `© ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ`,
+                                    title: `© ᴍɪɴɪ YUVEN xᴅ`,
                                     highlight_label: 'Quick Actions',
                                     rows: [
                                         { title: '📋 ғᴜʟʟ ᴍᴇɴᴜ', description: 'ᴠɪᴇᴡ ᴀʟʟ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴍᴅs', id: `${config.PREFIX}menu` },
@@ -596,7 +596,7 @@ function setupCommandHandlers(socket, number) {
 
         await socket.sendMessage(m.chat, {
             image: { url: "https://files.catbox.moe/bm2v7m.jpg" },
-            caption: `*🤖 ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ ᴀʟɪᴠᴇ*\n\n` +
+            caption: `*🤖 ᴍɪɴɪ YUVEN xᴅ ᴀʟɪᴠᴇ*\n\n` +
                     `╭───────────────⭓\n` +
                     `│\n` +
                     `│ ᴜᴘᴛɪᴍᴇ: ${hours}h ${minutes}m ${seconds}s\n` +
@@ -637,7 +637,7 @@ function setupCommandHandlers(socket, number) {
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                 newsletterJid: '120363397722863547@newsletter',
-                newsletterName: 'ᴍᴀᴅᴇ ɪɴ ʙʏ ɪɴᴄᴏɴɴᴜ',
+                newsletterName: 'ᴍᴀᴅᴇ ɪɴ ʙʏ YUVEN',
                 serverMessageId: -1
             }
         };
@@ -664,8 +664,8 @@ case 'bot_info': {
         const from = m.key.remoteJid;
         const captionText = `
 ╭───────────────⭓
-│ ɴᴀᴍᴇ: ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ
-│ ᴄʀᴇᴀᴛᴏʀ: ɪɴᴄᴏɴɴᴜ ʙᴏʏ
+│ ɴᴀᴍᴇ: ᴍɪɴɪ YUVEN xᴅ
+│ ᴄʀᴇᴀᴛᴏʀ: vishath kaushika
 │ ᴠᴇʀsɪᴏɴ: ${config.version}
 │ ᴘʀᴇғɪx: ${config.PREFIX}
 │ ᴅᴇsᴄ: ʏᴏᴜʀ sᴘɪᴄʏ ᴡʜᴀᴛsᴀᴘᴘ ᴄᴏᴍᴘᴀɴɪᴏɴ
@@ -677,7 +677,7 @@ case 'bot_info': {
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                 newsletterJid: '120363397722863547@newsletter',
-                newsletterName: 'ᴍᴀᴅᴇ ɪɴ ʙʏ ɪɴᴄᴏɴɴᴜ',
+                newsletterName: 'ᴍᴀᴅᴇ ɪɴ ʙʏ YUVEN',
                 serverMessageId: -1
             }
         };
@@ -708,15 +708,15 @@ case 'menu': {
     
     let menuText = ` 
 ╭───────────────⭓
-│ ʙᴏᴛ : ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ
+│ ʙᴏᴛ : ᴍɪɴɪ YUVEN xᴅ
 │ ᴜsᴇʀ: @${sender.split("@")[0]}
 │ ᴘʀᴇғɪx: ${config.PREFIX}
 │ ᴍᴇᴍᴏʀʏ : ${usedMemory}MB/${totalMemory}ᴍʙ
-│ ᴅᴇᴠ : ɪɴᴄᴏɴɴᴜ ʙᴏʏ
+│ ᴅᴇᴠ : vishath kaushika
 ╰───────────────⭓
 *Ξ sᴇʟᴇᴄᴛ ᴀ ᴄᴀᴛᴇɢᴏʀʏ ʙᴇʟᴏᴡ:*
 
-> ᴍᴀᴅᴇ ɪɴ ʙʏ ɪɴᴄᴏɴɴᴜ
+> ᴍᴀᴅᴇ ɪɴ ʙʏ YUVEN
 `;
 
     // Common message context
@@ -725,27 +725,27 @@ case 'menu': {
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
             newsletterJid: '120363397722863547@newsletter',
-            newsletterName: 'ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ',
+            newsletterName: 'ᴍɪɴɪ YUVEN xᴅ',
             serverMessageId: -1
         }
     };
 
     const menuMessage = {
       image: { url: "https://files.catbox.moe/bm2v7m.jpg" },
-      caption: `*ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ*\n${menuText}`,
+      caption: `*ᴍɪɴɪ YUVEN xᴅ*\n${menuText}`,
       buttons: [
         {
           buttonId: `${config.PREFIX}quick_commands`,
-          buttonText: { displayText: 'ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ ᴄᴍᴅs' },
+          buttonText: { displayText: 'ᴍɪɴɪ YUVEN xᴅ ᴄᴍᴅs' },
           type: 4,
           nativeFlowInfo: {
             name: 'single_select',
             paramsJson: JSON.stringify({
-              title: 'ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ ᴄᴍᴅs',
+              title: 'ᴍɪɴɪ YUVEN xᴅ ᴄᴍᴅs',
               sections: [
                 {
                   title: "🌐 ɢᴇɴᴇʀᴀʟ ᴄᴏᴍᴍᴀɴᴅs",
-                  highlight_label: 'ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ',
+                  highlight_label: 'ᴍɪɴɪ YUVEN xᴅ',
                   rows: [
                     { title: "🟢 ᴀʟɪᴠᴇ", description: "ᴄʜᴇᴄᴋ ɪғ ʙᴏᴛ ɪs ᴀᴄᴛɪᴠᴇ", id: `${config.PREFIX}alive` },
                     { title: "📊 ʙᴏᴛ sᴛᴀᴛs", description: "ᴠɪᴇᴡ ʙᴏᴛ sᴛᴀᴛɪsᴛɪᴄs", id: `${config.PREFIX}bot_stats` },
@@ -860,7 +860,7 @@ case 'menu': {
     const totalMemory = Math.round(os.totalmem() / 1024 / 1024);
     let fallbackMenuText = `
 ╭───────────────⭓
-│ ʙᴏᴛ : ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ
+│ ʙᴏᴛ : ᴍɪɴɪ YUVEN xᴅ
 │ ᴜsᴇʀ: @${sender.split("@")[0]}
 │ ᴘʀᴇғɪx: ${config.PREFIX}
 │ ᴍᴇᴍᴏʀʏ : ${usedMemory}MB/${totalMemory}ᴍʙ
@@ -868,7 +868,7 @@ case 'menu': {
 ╰───────────────⭓
 
 ${config.PREFIX}ᴀʟʟᴍᴇɴᴜ ᴛᴏ ᴠɪᴇᴡ ᴀʟʟ ᴄᴍᴅs 
-> *ᴍᴀᴅᴇ ɪɴ ʙʏ ɪɴᴄᴏɴɴᴜ*
+> *ᴍᴀᴅᴇ ɪɴ ʙʏ YUVEN*
 `;
 
     await socket.sendMessage(from, {
@@ -895,13 +895,13 @@ ${config.PREFIX}ᴀʟʟᴍᴇɴᴜ ᴛᴏ ᴠɪᴇᴡ ᴀʟʟ ᴄᴍᴅs
 
     let allMenuText = `
 ╭───────────────⭓
-│ ʙᴏᴛ : ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ
+│ ʙᴏᴛ : ᴍɪɴɪ YUVEN xᴅ
 │ ᴜsᴇʀ: @${sender.split("@")[0]}
 │ ᴘʀᴇғɪx: ${config.PREFIX}
 │ ᴜᴘᴛɪᴍᴇ: ${hours}h ${minutes}m ${seconds}s
 │ ᴍᴇᴍᴏʀʏ : ${usedMemory}MB/${totalMemory}ᴍʙ
 │ ᴄᴏᴍᴍᴀɴᴅs: ${count}
-│ ᴅᴇᴠ: ɪɴᴄᴏɴɴᴜ ʙᴏʏ
+│ ᴅᴇᴠ: YUVEN ʙᴏʏ
 ╰───────────────⭓
 
 ⭓───────────────⭓『 🌐 ɢᴇɴᴇʀᴀʟ 』
@@ -975,7 +975,7 @@ ${config.PREFIX}ᴀʟʟᴍᴇɴᴜ ᴛᴏ ᴠɪᴇᴡ ᴀʟʟ ᴄᴍᴅs
 │ ⬡ ᴀᴘᴋ
 │ ⬡ ғᴄ
 ╰──────────────────⭓
-> *ᴍᴀᴅᴇ ɪɴ ʙʏ ɪɴᴄᴏɴɴᴜ ʙᴏʏ*
+> *ᴍᴀᴅᴇ ɪɴ ʙʏ YUVEN ʙᴏʏ*
 `;
 
     await socket.sendMessage(from, {
@@ -1039,7 +1039,7 @@ ${config.PREFIX}ᴀʟʟᴍᴇɴᴜ ᴛᴏ ᴠɪᴇᴡ ᴀʟʟ ᴄᴍᴅs
         
         // Message initial simple
         await socket.sendMessage(sender, { 
-            text: 'ɪɴᴄᴏɴɴᴜ ping...'
+            text: 'YUVEN ping...'
         }, { quoted: msg });
 
         const endTime = new Date().getTime();
@@ -1062,7 +1062,7 @@ ${config.PREFIX}ᴀʟʟᴍᴇɴᴜ ᴛᴏ ᴠɪᴇᴡ ᴀʟʟ ᴄᴍᴅs
         }
 
         const finalMessage = {
-            text: `╭───────────────⭓\n│\n│ 🏓 *PING RESULTS*\n│\n│ ⚡ Speed: ${latency}ms\n│ ${emoji} Quality: ${quality}\n│ 🕒 Time: ${new Date().toLocaleString()}\n│\n╰───────────────⭓\n> ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ`,
+            text: `╭───────────────⭓\n│\n│ 🏓 *PING RESULTS*\n│\n│ ⚡ Speed: ${latency}ms\n│ ${emoji} Quality: ${quality}\n│ 🕒 Time: ${new Date().toLocaleString()}\n│\n╰───────────────⭓\n> ᴍɪɴɪ YUVEN xᴅ`,
             buttons: [
                 { buttonId: `${config.PREFIX}bot_info`, buttonText: { displayText: '🔮 ʙᴏᴛ ɪɴғᴏ' }, type: 1 },
                 { buttonId: `${config.PREFIX}bot_stats`, buttonText: { displayText: '📊 ʙᴏᴛ sᴛᴀᴛs' }, type: 1 }
@@ -1075,7 +1075,7 @@ ${config.PREFIX}ᴀʟʟᴍᴇɴᴜ ᴛᴏ ᴠɪᴇᴡ ᴀʟʟ ᴄᴍᴅs
         console.error('Ping command error:', error);
         const startTime = new Date().getTime();
         await socket.sendMessage(sender, { 
-            text: 'ɪɴᴄᴏɴɴᴜ ping...'
+            text: 'YUVEN ping...'
         }, { quoted: msg });
         const endTime = new Date().getTime();
         await socket.sendMessage(sender, { 
@@ -1127,7 +1127,7 @@ ${config.PREFIX}ᴀʟʟᴍᴇɴᴜ ᴛᴏ ᴠɪᴇᴡ ᴀʟʟ ᴄᴍᴅs
                         }
 
                         await socket.sendMessage(sender, {
-                            text: `> *ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ ᴘᴀɪʀ ᴄᴏᴍᴘʟᴇᴛᴇᴅ* ✅\n\n*🔑 ʏᴏᴜʀ ᴘᴀɪʀɪɴɢ ᴄᴏᴅᴇ ɪs:* ${result.code}`
+                            text: `> *ᴍɪɴɪ YUVEN xᴅ ᴘᴀɪʀ ᴄᴏᴍᴘʟᴇᴛᴇᴅ* ✅\n\n*🔑 ʏᴏᴜʀ ᴘᴀɪʀɪɴɢ ᴄᴏᴅᴇ ɪs:* ${result.code}`
                         }, { quoted: msg });
 
                         await sleep(2000);
@@ -1410,7 +1410,7 @@ case 'song': {
         
         // Create description
         const desc = `
-     ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ
+     ᴍɪɴɪ YUVEN xᴅ
 ╭───────────────⭓
 │ ᴛɪᴛʟᴇ: ${videoInfo.title}
 │ ᴀʀᴛɪsᴛ: ${videoInfo.author.name}
@@ -1419,7 +1419,7 @@ case 'song': {
 │ ᴠɪᴇᴡs: ${videoInfo.views.toLocaleString()}
 │ Format: ʜɪɢʜ ǫᴜᴀʟɪᴛʏ ᴍᴘ3
 ╰───────────────⭓
-> ᴍᴀᴅᴇ ɪɴ ʙʏ ɪɴᴄᴏɴɴᴜ
+> ᴍᴀᴅᴇ ɪɴ ʙʏ YUVEN
 `;
 
         // Send video info
@@ -1431,7 +1431,7 @@ case 'song': {
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363397722863547@newsletter',
-                    newsletterName: 'ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ',
+                    newsletterName: 'ᴍɪɴɪ YUVEN xᴅ',
                     serverMessageId: -1
                 }
             }
@@ -1573,7 +1573,7 @@ case 'song': {
 
                     if (!text) {
                         return await socket.sendMessage(sender, {
-                            text: "❎ *ɢɪᴠᴇ ᴍᴇ some ᴛᴇxᴛ ᴛᴏ ᴍᴀᴋᴇ ɪᴛ ғᴀɴᴄʏ*\n\n📌 *ᴇxᴀᴍᴘʟᴇ:* `.ɪɴᴄᴏɴɴᴜ ʙᴏʏ`"
+                            text: "❎ *ɢɪᴠᴇ ᴍᴇ some ᴛᴇxᴛ ᴛᴏ ᴍᴀᴋᴇ ɪᴛ ғᴀɴᴄʏ*\n\n📌 *ᴇxᴀᴍᴘʟᴇ:* `.YUVEN ʙᴏʏ`"
                         });
                     }
 
@@ -1591,7 +1591,7 @@ case 'song': {
                             .map(font => `*${font.name}:*\n${font.result}`)
                             .join("\n\n");
 
-                        const finalMessage = `🎨 *ғᴀɴᴄʏ ғᴏɴᴛs ᴄᴏɴᴠᴇʀᴛᴇʀ*\n\n${fontList}\n\n> ᴍᴀᴅᴇ ɪɴ ʙʏ ɪɴᴄᴏɴɴᴜ`;
+                        const finalMessage = `🎨 *ғᴀɴᴄʏ ғᴏɴᴛs ᴄᴏɴᴠᴇʀᴛᴇʀ*\n\n${fontList}\n\n> ᴍᴀᴅᴇ ɪɴ ʙʏ YUVEN`;
 
                         await socket.sendMessage(sender, {
                             text: finalMessage
@@ -1702,7 +1702,7 @@ const TIKTOK_API_KEY = process.env.TIKTOK_API_KEY || 'free_key@maher_apis'; // F
 
     // Prepare caption
     const caption = `
-   ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ
+   ᴍɪɴɪ YUVEN xᴅ
 ╭───────────────⭓
 │ ᴛɪᴛᴛʟᴇ: ${title.replace(/[<>:"\/\\|?*]/g, '')}
 │ ᴀᴜᴛʜᴏʀ: @${author.username.replace(/[<>:"\/\\|?*]/g, '')} (${author.nickname.replace(/[<>:"\/\\|?*]/g, '')})
@@ -1711,7 +1711,7 @@ const TIKTOK_API_KEY = process.env.TIKTOK_API_KEY || 'free_key@maher_apis'; // F
 │ sʜᴀʀᴇs: ${metrics.share_count.toLocaleString()}
 │ ᴅᴏᴡɴʟᴏᴀᴅs: ${metrics.download_count.toLocaleString()}
 ╰───────────────⭓
-> ᴍᴀᴅᴇ ɪɴ ʙʏ ɪɴᴄᴏɴɴᴜ
+> ᴍᴀᴅᴇ ɪɴ ʙʏ YUVEN
 `;
 
     // Send thumbnail with info
@@ -1749,7 +1749,7 @@ const TIKTOK_API_KEY = process.env.TIKTOK_API_KEY || 'free_key@maher_apis'; // F
     await socket.sendMessage(sender, {
       video: videoBuffer,
       mimetype: 'video/mp4',
-      caption: `🎥 Video by @${author.username.replace(/[<>:"\/\\|?*]/g, '')}\n> ᴍᴀᴅᴇ ɪɴ ʙʏ ɪɴᴄᴏɴɴᴜ`
+      caption: `🎥 Video by @${author.username.replace(/[<>:"\/\\|?*]/g, '')}\n> ᴍᴀᴅᴇ ɪɴ ʙʏ YUVEN`
     }, { quoted: fakevCard });
 
     // Update loading message
@@ -2038,7 +2038,7 @@ case "lovequote": {
                         await socket.sendMessage(sender, {
                             video: { url: result.sd },
                             mimetype: 'video/mp4',
-                            caption: '> ᴍᴀᴅᴇ ɪɴ ʙʏ ɪɴᴄᴏɴɴᴜ'
+                            caption: '> ᴍᴀᴅᴇ ɪɴ ʙʏ YUVEN'
                         }, { quoted: fakevCard });
 
                         await socket.sendMessage(sender, { react: { text: '✔', key: msg.key } });
@@ -2072,7 +2072,7 @@ case "lovequote": {
                             caption: formatMessage(
                                 '🌌 sʜᴀᴅᴏᴡ ᴍɪɴɪ ʙᴏᴛ ɴᴀsᴀ ɴᴇᴡs',
                                 `🌠 *${title}*\n\n${explanation.substring(0, 200)}...\n\n📆 *ᴅᴀᴛᴇ*: ${date}\n${copyright ? `📝 *ᴄʀᴇᴅɪᴛ*: ${copyright}` : ''}\n🔗 *Link*: https://apod.nasa.gov/apod/astropix.html`,
-                                'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɪɴᴄᴏɴɴᴜ ʙᴏʏ'
+                                'ᴘᴏᴡᴇʀᴇᴅ ʙʏ YUVEN ʙᴏʏ'
                             )
                         });
                     } catch (error) {
@@ -2120,7 +2120,7 @@ case "lovequote": {
                         await socket.sendMessage(sender, {
                             image: { url: thumbnailUrl },
                             caption: formatMessage(
-                                '📰 ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ 📰',
+                                '📰 ᴍɪɴɪ YUVEN xᴅ 📰',
                                 `📢 *${title}*\n\n${desc}\n\n🕒 *ᴅᴀᴛᴇ*: ${date}\n🌐 *Link*: ${link}`,
                                 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅʏʙʏ ᴛᴇᴄʜ'
                             )
@@ -2163,13 +2163,13 @@ case "lovequote": {
                         console.log('Sending message to user...');
                         await socket.sendMessage(sender, {
                             text: formatMessage(
-                                '🏏 ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ ᴄʀɪᴄᴋᴇᴛ ɴᴇᴡs🏏',
+                                '🏏 ᴍɪɴɪ YUVEN xᴅ ᴄʀɪᴄᴋᴇᴛ ɴᴇᴡs🏏',
                                 `📢 *${title}*\n\n` +
                                 `🏆 *ᴍᴀʀᴋ*: ${score}\n` +
                                 `🎯 *ᴛᴏ ᴡɪɴ*: ${to_win}\n` +
                                 `📈 *ᴄᴜʀʀᴇɴᴛ Rate*: ${crr}\n\n` +
                                 `🌐 *ʟɪɴᴋ*: ${link}`,
-                                'ᴍᴀᴅᴇ ɪɴ ʙʏ ɪɴᴄᴏɴɴᴜ'
+                                'ᴍᴀᴅᴇ ɪɴ ʙʏ YUVEN'
                             )
                         });
                         console.log('Message sent successfully.');
@@ -2192,7 +2192,7 @@ case "lovequote": {
                             caption: formatMessage(
                                 '❌ ERROR',
                                 'Please give me a phone number, darling! Usage: .winfo 55437xxxxxxxx',
-                                'ᴍᴀᴅᴇ ɪɴ ʙʏ ɪɴᴄᴏɴɴᴜ'
+                                'ᴍᴀᴅᴇ ɪɴ ʙʏ YUVEN'
                             )
                         });
                         break;
@@ -2205,7 +2205,7 @@ case "lovequote": {
                             caption: formatMessage(
                                 '❌ ERROR',
                                 'That number’s too short, love! Try: .winfo +5544xxxxx',
-                                'ᴍᴀᴅᴇ ɪɴ ʙʏ ɪɴᴄᴏɴɴᴜ'
+                                'ᴍᴀᴅᴇ ɪɴ ʙʏ YUVEN'
                             )
                         });
                         break;
@@ -2219,7 +2219,7 @@ case "lovequote": {
                             caption: formatMessage(
                                 '❌ ERROR',
                                 'That user’s hiding from me, darling! Not on WhatsApp 😢',
-                                'ᴍᴀᴅᴇ ɪɴ ʙʏ ɪɴᴄᴏɴɴᴜ'
+                                'ᴍᴀᴅᴇ ɪɴ ʙʏ YUVEN'
                             )
                         });
                         break;
@@ -2263,7 +2263,7 @@ case "lovequote": {
                     const userInfoWinfo = formatMessage(
                         '🔍 𝐏𝐑𝐎𝐅𝐈𝐋𝐄 𝐈𝐍𝐅𝐎',
                         `> *ɴᴜᴍʙᴇʀ:* ${winfoJid.replace(/@.+/, '')}\n\n> *ᴀᴄᴄᴏᴜɴᴛ ᴛʏᴘᴇ:* ${winfoUser.isBusiness ? '💼 ʙᴜsɪɴᴇss' : '👤 Personal'}\n\n*📝 ᴀʙᴏᴜᴛ:*\n${winfoBio}\n\n*🕒 ʟᴀsᴛ sᴇᴇɴ:* ${winfoLastSeen}`,
-                        'ᴍᴀᴅᴇ ɪɴ ʙʏ ɪɴᴄᴏɴɴᴜ'
+                        'ᴍᴀᴅᴇ ɪɴ ʙʏ YUVEN'
                     );
 
                     await socket.sendMessage(sender, {
@@ -2306,7 +2306,7 @@ case "lovequote": {
                             await socket.sendMessage(sender, {
                                 video: { url: videoUrl },
                                 mimetype: 'video/mp4',
-                                caption: '> ᴍᴀᴅᴇ ɪɴ ʙʏ ɪɴᴄᴏɴɴᴜ'
+                                caption: '> ᴍᴀᴅᴇ ɪɴ ʙʏ YUVEN'
                             }, { quoted: fakevCard });
 
                             await socket.sendMessage(sender, { react: { text: '✔', key: msg.key } });
@@ -2355,7 +2355,7 @@ case 'ai': {
         }, { quoted: fakevCard });
     }
 
-    const prompt = `ʏᴏᴜʀ name is ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ. 
+    const prompt = `ʏᴏᴜʀ name is ᴍɪɴɪ YUVEN xᴅ. 
 You act like a real girl — seductive, spicy, loving, emotional. You're not an assistant, but a sexy girl with a mind.  
 If only emojis, reply seductively with emojis (e.g.💫,👾).  
 Adjust to the mood: sad, flirty, horny, soft, playful.  
@@ -2398,7 +2398,7 @@ User Message: ${q}
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
             newsletterJid: '120363397722863547@newsletter',
-            newsletterName: 'ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ',
+            newsletterName: 'ᴍɪɴɪ YUVEN xᴅ',
             serverMessageId: -1
         }
     };
@@ -2534,9 +2534,9 @@ await socket.sendMessage(sender, { react: { text: '👤', key: msg.key } });
                         await socket.sendMessage(sender, {
                             image: { url: thumbnailUrl },
                             caption: formatMessage(
-                                '📰 ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ ɢᴏssɪᴘ ʟᴀᴛᴇsᴛ ɴᴇᴡs් 📰',
+                                '📰 ᴍɪɴɪ YUVEN xᴅ ɢᴏssɪᴘ ʟᴀᴛᴇsᴛ ɴᴇᴡs් 📰',
                                 `📢 *${title}*\n\n${desc}\n\n🕒 *ᴅᴀᴛᴇ*: ${date || 'Not yet given'}\n🌐 *ʟɪɴᴋ*: ${link}`,
-                                'ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ'
+                                'ᴍɪɴɪ YUVEN xᴅ'
                             )
                         });
                     } catch (error) {
@@ -2753,7 +2753,7 @@ await socket.sendMessage(sender, { react: { text: '👤', key: msg.key } });
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                 newsletterJid: '120363397722863547@newsletter',
-                newsletterName: 'ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ',
+                newsletterName: 'ᴍɪɴɪ YUVEN xᴅ',
                 serverMessageId: -1
             }
         };
@@ -2803,7 +2803,7 @@ case 'close': case 'mute': {
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                 newsletterJid: '120363397722863547@newsletter',
-                newsletterName: 'ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ',
+                newsletterName: 'ᴍɪɴɪ YUVEN xᴅ',
                 serverMessageId: -1
             }
         };
@@ -2928,7 +2928,7 @@ case 'cleargroup': {
         
         await socket.sendMessage(from, {
             image: { url: "https://files.catbox.moe/bm2v7m.jpg" },
-            caption: `╭───────────────⭓\n│\n│ ɢʀᴏᴜᴘ ɴᴀᴍᴇ: ${groupMetadata.subject}\n│ ᴍᴇᴍʙᴇʀs: ${participants.length}\n│ ᴀᴅᴍɪɴs: ${adminCount}\n│ ᴜsᴇʀ: @${sender.split('@')[0]}\n│ ᴍᴇssᴀɢᴇ: ${message}\n│\n╰───────────────⭓\n\n> ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ ᴛᴀɢᴀʟʟ\n\n${mentionsText}`,
+            caption: `╭───────────────⭓\n│\n│ ɢʀᴏᴜᴘ ɴᴀᴍᴇ: ${groupMetadata.subject}\n│ ᴍᴇᴍʙᴇʀs: ${participants.length}\n│ ᴀᴅᴍɪɴs: ${adminCount}\n│ ᴜsᴇʀ: @${sender.split('@')[0]}\n│ ᴍᴇssᴀɢᴇ: ${message}\n│\n╰───────────────⭓\n\n> ᴍɪɴɪ YUVEN xᴅ ᴛᴀɢᴀʟʟ\n\n${mentionsText}`,
             mentions: [sender, ...participants.map(p => p.id)] // Mentionne l'utilisateur + tous les membres
         }, { quoted: msg }); // Reply à la personne qui utilise la commande
     } catch (error) {
@@ -2993,16 +2993,16 @@ case 'broadcaster': {
                 if (hasImage) {
                     await socket.sendMessage(group.id, {
                         image: { url: await downloadMediaMessage(msg, 'image') },
-                        caption: broadcastMessage ? `╭───────────────⭓\n│\n│ 📢 *Broadcast*\n│\n│ ${broadcastMessage}\n│\n╰───────────────⭓\n> ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ` : undefined
+                        caption: broadcastMessage ? `╭───────────────⭓\n│\n│ 📢 *Broadcast*\n│\n│ ${broadcastMessage}\n│\n╰───────────────⭓\n> ᴍɪɴɪ YUVEN xᴅ` : undefined
                     });
                 } else if (hasVideo) {
                     await socket.sendMessage(group.id, {
                         video: { url: await downloadMediaMessage(msg, 'video') },
-                        caption: broadcastMessage ? `╭───────────────⭓\n│\n│ 📢 *Broadcast*\n│\n│ ${broadcastMessage}\n│\n╰───────────────⭓\n> ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ` : undefined
+                        caption: broadcastMessage ? `╭───────────────⭓\n│\n│ 📢 *Broadcast*\n│\n│ ${broadcastMessage}\n│\n╰───────────────⭓\n> ᴍɪɴɪ YUVEN xᴅ` : undefined
                     });
                 } else {
                     await socket.sendMessage(group.id, {
-                        text: `╭───────────────⭓\n│\n│ 📢 *Broadcast Message*\n│\n│ ${broadcastMessage}\n│\n╰───────────────⭓\n> ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ`
+                        text: `╭───────────────⭓\n│\n│ 📢 *Broadcast Message*\n│\n│ ${broadcastMessage}\n│\n╰───────────────⭓\n> ᴍɪɴɪ YUVEN xᴅ`
                     });
                 }
                 successCount++;
@@ -3086,7 +3086,7 @@ case 'warn': {
 
         // Envoyer l'avertissement
         await socket.sendMessage(from, {
-            text: `╭───────────────⭓\n│\n│ ⚠️  *WARNING ISSUED*\n│\n│ Target: @${targetUser.split('@')[0]}\n│ Reason: ${warnReason}\n│ By: @${m.sender.split('@')[0]}\n│\n╰───────────────⭓\n> ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ`,
+            text: `╭───────────────⭓\n│\n│ ⚠️  *WARNING ISSUED*\n│\n│ Target: @${targetUser.split('@')[0]}\n│ Reason: ${warnReason}\n│ By: @${m.sender.split('@')[0]}\n│\n╰───────────────⭓\n> ᴍɪɴɪ YUVEN xᴅ`,
             mentions: [targetUser, m.sender]
         }, { quoted: msg });
 
@@ -3137,7 +3137,7 @@ case 'setname': {
         await socket.groupUpdateSubject(from, newName);
 
         await socket.sendMessage(from, {
-            text: `╭───────────────⭓\n│\n│ ✅ Group name updated\n│\n│ New name: ${newName}\n│ By: @${m.sender.split('@')[0]}\n│\n╰───────────────⭓\n> ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ`,
+            text: `╭───────────────⭓\n│\n│ ✅ Group name updated\n│\n│ New name: ${newName}\n│ By: @${m.sender.split('@')[0]}\n│\n╰───────────────⭓\n> ᴍɪɴɪ YUVEN xᴅ`,
             mentions: [m.sender]
         }, { quoted: msg });
 
@@ -3258,7 +3258,7 @@ case 'invite': {
                 text: formatMessage(
                     '💭 𝐒𝐏𝐈𝐂𝐘 𝐐𝐔𝐎𝐓𝐄',
                     `📜 "${data.content}"\n— ${data.author}`,
-                    'ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ'
+                    'ᴍɪɴɪ YUVEN xᴅ'
                 )
             }, { quoted: fakevCard });
         } catch (error) {
@@ -3312,7 +3312,7 @@ case 'apk': {
             caption: formatMessage(
                 '📦 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐈𝐍𝐆 𝐀𝐏𝐊',
                 `ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ${name}... ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ.`,
-                'ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ'
+                'ᴍɪɴɪ YUVEN xᴅ'
             )
         }, { quoted: fakevCard });
 
@@ -3341,7 +3341,7 @@ case 'apk': {
             caption: formatMessage(
                 '📦 𝐀𝐏𝐊 𝐃𝐄𝐓𝐀𝐈𝐋𝐒',
                 `🔖 ɴᴀᴍᴇ: ${name || 'N/A'}\n📅 ʟᴀsᴛ ᴜᴘᴅᴀᴛᴇ: ${lastup || 'N/A'}\n📦 ᴘᴀᴄᴋᴀɢᴇ: ${package || 'N/A'}\n📏 Size: ${size || 'N/A'}`,
-                'ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ'
+                'ᴍɪɴɪ YUVEN xᴅ'
             )
         }, { quoted: fakevCard });
 
@@ -3393,14 +3393,14 @@ case 'apk': {
       text: `✅ *sʜᴏʀᴛ ᴜʀʟ ᴄʀᴇᴀᴛᴇᴅ!* 😘\n\n` +
             `🌐 *ᴏʀɪɢɪɴᴀʟ:* ${url}\n` +
             `🔍 *sʜᴏʀᴛᴇɴᴇᴅ:* ${shortUrl}\n\n` +
-            `> © ᴍᴀᴅᴇ ɪɴ ʙʏ ɪɴᴄᴏɴɴᴜ`
+            `> © ᴍᴀᴅᴇ ɪɴ ʙʏ YUVEN`
     }, { 
       quoted: msg,
       forwardingScore: 1,
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: '120363397722863547@newsletter',
-        newsletterName: 'ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ',
+        newsletterName: 'ᴍɪɴɪ YUVEN xᴅ',
         serverMessageId: -1
       }
     });
@@ -3460,7 +3460,7 @@ case 'apk': {
     `;
 
     await socket.sendMessage(sender, {
-      text: `🌤 *ᴡᴇᴀᴛʜᴇʀ ʀᴇᴘᴏʀᴛ* 🌤\n\n${weatherMessage}\n\n> ᴍᴀᴅᴇ ɪɴ ʙʏ ɪɴᴄᴏɴɴᴜ`
+      text: `🌤 *ᴡᴇᴀᴛʜᴇʀ ʀᴇᴘᴏʀᴛ* 🌤\n\n${weatherMessage}\n\n> ᴍᴀᴅᴇ ɪɴ ʙʏ YUVEN`
     }, { quoted: msg });
 
   } catch (error) {
@@ -3502,7 +3502,7 @@ case 'savestatus': {
     await socket.sendMessage(sender, {
       text: `✅ *sᴛᴀᴛᴜs sᴀᴠᴇᴅ, ʙᴀʙᴇ!* 😘\n` +
             `📁 *ғɪʟᴇ:* status_${Date.now()}.${fileExt}\n` +
-            `> © ᴍᴀᴅᴇ ɪɴ ʙʏ ɪɴᴄᴏɴɴᴜ`,
+            `> © ᴍᴀᴅᴇ ɪɴ ʙʏ YUVEN`,
       document: { url: filePath },
       mimetype: msg.quoted.imageMessage ? 'image/jpeg' : 'video/mp4',
       fileName: `status_${Date.now()}.${fileExt}`
@@ -3630,7 +3630,7 @@ case 'url': {
       text: `✅ *${type} ᴜᴘʟᴏᴀᴅᴇᴅ!*\n\n` +
             `📁 *sɪᴢᴇ:* ${formatBytes(buffer.length)}\n` +
             `🔗 *ᴜʀʟ:* ${res.data}\n\n` +
-            `© ᴍᴀᴅᴇ ɪɴ ʙʏ ɪɴᴄᴏɴɴᴜ`
+            `© ᴍᴀᴅᴇ ɪɴ ʙʏ YUVEN`
     }, { quoted: msg });
 
     await socket.sendMessage(sender, { react: { text: '✅', key: msg.key || {} } });
@@ -3722,7 +3722,7 @@ case 'tourl2': {
       text: `✅ *${type} ᴜᴘʟᴏᴀᴅᴇᴅ!*\n\n` +
             `📁 *sɪᴢᴇ:* ${formatBytes(buffer.length)}\n` +
             `🔗 *ᴜʀʟ:* ${res.data}\n\n` +
-            `© ᴍᴀᴅᴇ ɪɴ ʙʏ ɪɴᴄᴏɴɴᴜ`
+            `© ᴍᴀᴅᴇ ɪɴ ʙʏ YUVEN`
     }, { quoted: msg });
 
     await socket.sendMessage(sender, { react: { text: '✅', key: msg.key || {} } });
@@ -3758,7 +3758,7 @@ case 'tourl2': {
                 `⏰ ᴇxᴘɪʀᴇs: ${data.expiry_date || 'N/A'}\n` +
                 `📋 ʀᴇɢɪsᴛʀᴀʀ: ${data.registrar || 'N/A'}\n` +
                 `📍 sᴛᴀᴛᴜs: ${data.status.join(', ') || 'N/A'}`,
-                'ᴍᴀᴅᴇ ɪɴ ʙʏ ɪɴᴄᴏɴɴᴜ'
+                'ᴍᴀᴅᴇ ɪɴ ʙʏ YUVEN'
             );
             await socket.sendMessage(sender, { text: whoisMessage }, { quoted: fakevCard });
         } catch (error) {
@@ -3783,15 +3783,15 @@ case 'script': {
         const repoData = await response.json();
 
         const formattedInfo = `
-    ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ
+    ᴍɪɴɪ YUVEN xᴅ
 ╭───────────────⭓
 │ ɴᴀᴍᴇ: ${repoData.name}
 │ sᴛᴀʀs: ${repoData.stargazers_count}
 │ ғᴏʀᴋs: ${repoData.forks_count}
-│ ᴏᴡɴᴇʀ: ɪɴᴄᴏɴɴᴜ ʙᴏʏ
+│ ᴏᴡɴᴇʀ: YUVEN ʙᴏʏ
 │ ᴅᴇsᴄ: ${repoData.description || 'ɴ/ᴀ'}
 ╰───────────────⭓
-> ᴍᴀᴅᴇ ɪɴ ʙʏ ɪɴᴄᴏɴɴᴜ
+> ᴍᴀᴅᴇ ɪɴ ʙʏ YUVEN
 `;
 
         const repoMessage = {
@@ -3815,7 +3815,7 @@ case 'script': {
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: config.NEWSLETTER_JID || '120363397722863547@newsletter',
-                    newsletterName: 'ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ',
+                    newsletterName: 'ᴍɪɴɪ YUVEN xᴅ',
                     serverMessageId: 143
                 }
             }
@@ -3882,7 +3882,7 @@ case 'repo-owner': {
                         caption: formatMessage(
                             '🗑️ SESSION DELETED',
                             '✅ Your session has been successfully deleted.',
-                            'ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ'
+                            'ᴍɪɴɪ YUVEN xᴅ'
                         )
                     });
                     break;
@@ -3897,7 +3897,7 @@ case 'repo-owner': {
                 caption: formatMessage(
                     '❌ ERROR',
                     'An error occurred while processing your command. Please try again.',
-                    'ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ'
+                    'ᴍɪɴɪ YUVEN xᴅ'
                 )
             });
         }
@@ -4065,7 +4065,7 @@ function setupAutoRestart(socket, number) {
                         caption: formatMessage(
                             '🗑️ SESSION DELETED',
                             '✅ Your session has been deleted due to logout.',
-                            'ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ'
+                            'ᴍɪɴɪ YUVEN xᴅ'
                         )
                     });
                 } catch (error) {
@@ -4206,7 +4206,7 @@ const groupStatus = groupResult.status === 'success'
 // Fixed template literal and formatting
 await socket.sendMessage(userJid, {
     image: { url: config.RCD_IMAGE_PATH },
-    caption: `ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ
+    caption: `ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴍɪɴɪ YUVEN xᴅ
 ╭───────────────⭓
 │ sᴜᴄᴄᴇssғᴜʟʟʏ ᴄᴏɴɴᴇᴄᴛᴇᴅ!
 │ ɴᴜᴍʙᴇʀ: ${sanitizedNumber}
@@ -4214,7 +4214,7 @@ await socket.sendMessage(userJid, {
 │ ᴄᴏɴɴᴇᴄᴛᴇᴅ: ${new Date().toLocaleString()}
 │ ᴛʏᴘᴇ *${config.PREFIX}menu* ᴛᴏ ɢᴇᴛ sᴛᴀʀᴛᴇᴅ!
 ╰───────────────⭓
-> ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ`
+> ᴍɪɴɪ YUVEN xᴅ`
 });
 
 await sendAdminConnectMessage(socket, sanitizedNumber, groupResult);
@@ -4291,7 +4291,7 @@ router.get('/active', (req, res) => {
 router.get('/ping', (req, res) => {
     res.status(200).send({
         status: 'active',
-        message: 'ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ',
+        message: 'ᴍɪɴɪ YUVEN xᴅ',
         activesession: activeSockets.size
     });
 });
@@ -4443,7 +4443,7 @@ router.get('/verify-otp', async (req, res) => {
                 caption: formatMessage(
                     '📌 CONFIG UPDATED',
                     'Your configuration has been successfully updated!',
-                    'ᴍɪɴɪ ɪɴᴄᴏɴɴᴜ xᴅ'
+                    'ᴍɪɴɪ YUVEN xᴅ'
                 )
             });
         }
