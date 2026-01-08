@@ -1,4 +1,4 @@
-const express = require('express');
+xconst express = require('express');
 const fs = require('fs-extra');
 const path = require('path');
 const { exec } = require('child_process');
@@ -38,13 +38,13 @@ const config = {
     IMAGE_PATH: 'https://files.catbox.moe/bm2v7m.jpg',
     GROUP_INVITE_LINK: '',
     ADMIN_LIST_PATH: './admin.json',
-    RCD_IMAGE_PATH: 'https://files.catbox.moe/bm2v7m.jpg',
+    RCD_IMAGE_PATH: 'https://files.catbox.moe/05sxxs.jpg',
     NEWSLETTER_JID: '120363397722863547@newsletter',
     NEWSLETTER_MESSAGE_ID: '428',
     OTP_EXPIRY: 300000,
     version: '1.0.0',
     OWNER_NUMBER: '554488138425',
-    BOT_FOOTER: '> ᴍᴀᴅᴇ ɪɴ ʙʏ ɪɴᴄᴏɴɴᴜ',
+    BOT_FOOTER: '> ᴍᴀᴅᴇ ɪɴ ʙʏ vishath',
     CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vb6T8td5K3zQZbsKEU1R'
 };
 
