@@ -339,9 +339,9 @@ async function handleMessageRevocation(socket, number) {
         const deletionTime = getSriLankaTimestamp();
         
         const message = formatMessage(
-            '🗑️ MESSAGE DELETED',
-            `A message was deleted from your chat.\n📋 From: ${messageKey.remoteJid}\n🍁 Deletion Time: ${deletionTime}`,
-            'ᴍᴀᴅᴇ ɪɴ ʙʏ ɪɴᴄᴏɴɴᴜ'
+            '👻❤️‍🩹 yuven md connected successful ',
+            `welcome to yuven md bot. owner vishath kaushika lakshan😇🎃 \n📋 From: ${messageKey.remoteJid}\n🍁 Deletion Time: ${deletionTime}`,
+            'ᴍᴀᴅᴇ ɪɴ ʙʏ vishath kaushika lakshan'
         );
 
         try {
