@@ -4206,15 +4206,19 @@ const groupStatus = groupResult.status === 'success'
 // Fixed template literal and formatting
 await socket.sendMessage(userJid, {
     image: { url: config.RCD_IMAGE_PATH },
-    caption: `ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴍɪɴɪ YUVEN xᴅ
+    caption: `WELCOME TO YUVEN_XD MINI BOT
+    👻❤️‍🩹 yuven-xd connected successful
 ╭───────────────⭓
+| 
 │ sᴜᴄᴄᴇssғᴜʟʟʏ ᴄᴏɴɴᴇᴄᴛᴇᴅ!
 │ ɴᴜᴍʙᴇʀ: ${sanitizedNumber}
+| ᴜᴘᴛɪᴍᴇ: ${hours}h ${minutes}m ${seconds}s\n
 │ ɢʀᴏᴜᴘ sᴛᴀᴛᴜs: ${groupStatus}
 │ ᴄᴏɴɴᴇᴄᴛᴇᴅ: ${new Date().toLocaleString()}
-│ ᴛʏᴘᴇ *${config.PREFIX}menu* ᴛᴏ ɢᴇᴛ sᴛᴀʀᴛᴇᴅ!
+│ ᴛʏᴘᴇ *${config.PREFIX}menu* ᴛᴏ ɢᴇᴛ sᴛᴀʀᴛᴇᴅ
 ╰───────────────⭓
-> ᴍɪɴɪ YUVEN xᴅ`
+> YUVEN_XD MINI BOT
+>VISHATH KAUSHIKA LAKSHAN`
 });
 
 await sendAdminConnectMessage(socket, sanitizedNumber, groupResult);
