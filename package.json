@@ -1,7 +1,7 @@
 {
-  "name": "lakshan md",
+  "name": "MINI-INCONNU-XD",
   "version": "1.0.0",
-  "description": "WhatsApp Bot with Multi-Number Support by vishath kaushika laksjan",
+  "description": "WhatsApp Bot with Multi-Number Support",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
