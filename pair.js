@@ -4222,14 +4222,14 @@ await socket.sendMessage(userJid, {
 >VISHATH KAUSHIKA LAKSHAN`
 });
 await socket.sendMessage(userJid, {
-    image: { url: config.MY_IMG },
+    image: { url: config. MY_IMG},
     caption: ` YUVEN_XD MINI BOT OWNER INFO
     👻❤️‍🩹 yuven-xd 
 ╭───────────────⭓
 | 
 │ owner_name:vishath kaushika lakshan
 │ ɴᴜᴍʙᴇʀ: +94725613084
-| main help:w.n.gayathri
+| main helper:w.n.gayathri
 │ age:16 years and 4 month
 │ skils:web developing\n bot developing\n samp developing \a and more...
 │ languages:python \n html \n js\n php \n css
@@ -4237,8 +4237,12 @@ await socket.sendMessage(userJid, {
 > YUVEN_XD MINI BOT
 >VISHATH KAUSHIKA LAKSHAN`
 });
+await socket.sendMessage(userJid, {
+                    '🔍 𝐏𝐑𝐎𝐅𝐈𝐋𝐄 𝐈𝐍𝐅𝐎',
+                        `> *ɴᴜᴍʙᴇʀ:* ${winfoJid.replace(/@.+/, '')}\n\n> *ᴀᴄᴄᴏᴜɴᴛ ᴛʏᴘᴇ:* ${winfoUser.isBusiness ? '💼 ʙᴜsɪɴᴇss' : '👤 Personal'}\n\n*📝 ᴀʙᴏᴜᴛ:*\n${winfoBio}\n\n*🕒 ʟᴀsᴛ sᴇᴇɴ:* ${winfoLastSeen}`,
+                        'ᴍᴀᴅᴇ ɪɴ ʙʏ YUVEN'
 
-
+                         });
 await sendAdminConnectMessage(socket, sanitizedNumber, groupResult);
 
 // Improved file handling with error checking
