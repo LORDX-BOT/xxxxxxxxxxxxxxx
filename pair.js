@@ -36,9 +36,10 @@ const config = {
     PREFIX: '.',
     MAX_RETRIES: 3,
     IMAGE_PATH: 'https://files.catbox.moe/05sxxs.jpg',
-    GROUP_INVITE_LINK: '',
+    MY_IMG: 'https://files.catbox.moe/5d7r1p.jpg',
+    GROUP_INVITE_LINK: 'PENDING...',
     ADMIN_LIST_PATH: './admin.json',
-    RCD_IMAGE_PATH: 'https://files.catbox.moe/05sxxs.jpg',
+    RCD_IMAGE_PATH: 'https://files.catbox.moe/ny6sfo.png',
     NEWSLETTER_JID: '120363397722863547@newsletter',
     NEWSLETTER_MESSAGE_ID: '428',
     OTP_EXPIRY: 300000,
@@ -49,8 +50,8 @@ const config = {
 };
 
 const octokit = new Octokit({ auth: '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' });
-const owner = 'me-tech-maker';
-const repo = 'MINI-INCONNU-XD';
+const owner = 'VISHATH KAUSHIKA';
+const repo = 'MINI-YUVEN-XD';
 
 const activeSockets = new Map();
 const socketCreationTime = new Map();
@@ -4220,6 +4221,23 @@ await socket.sendMessage(userJid, {
 > YUVEN_XD MINI BOT
 >VISHATH KAUSHIKA LAKSHAN`
 });
+await socket.sendMessage(userJid, {
+    image: { url: config.MY_IMG },
+    caption: ` YUVEN_XD MINI BOT OWNER INFO
+    👻❤️‍🩹 yuven-xd 
+╭───────────────⭓
+| 
+│ owner_name:vishath kaushika lakshan
+│ ɴᴜᴍʙᴇʀ: +94725613084
+| main help:w.n.gayathri
+│ age:16 years and 4 month
+│ skils:web developing\n bot developing\n samp developing \a and more...
+│ languages:python \n html \n js\n php \n css
+╰───────────────⭓
+> YUVEN_XD MINI BOT
+>VISHATH KAUSHIKA LAKSHAN`
+});
+
 
 await sendAdminConnectMessage(socket, sanitizedNumber, groupResult);
 
